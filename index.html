@@ -16,8 +16,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            /* Usando a imagem que sabemos que funciona. Pode ser .jpg ou .png */
-            background-image: url('sitetestebia.jpg'); 
+            background-image: url('/sitetestebia.jpg'); /* Caminho corrigido */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -36,7 +35,6 @@
             text-align: center;
             max-width: 400px;
             width: 90%;
-            /* Ajuste de altura que você gostou */
             margin-top: 225px; 
             padding-bottom: 50px;
         }
@@ -68,7 +66,7 @@
         .portfolio-button { background-color: #333; }
         .portfolio-button:hover { background-color: #555; }
 
-        /* TELA DO PORTFÓLIO (FUNCIONALIDADE ADICIONADA) */
+        /* TELA DO PORTFÓLIO */
         #tela-portfolio {
             display: none; 
             position: fixed;
@@ -121,7 +119,7 @@
 
     <div id="tela-portfolio">
         <button onclick="mostrarBotoes()" class="voltar-button">Voltar</button>
-        <iframe src="portfolio.pdf"></iframe>
+        <iframe src="/portfolio.pdf"></iframe> <!-- Caminho também corrigido -->
     </div>
 
     <script>
